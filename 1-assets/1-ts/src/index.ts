@@ -1,9 +1,9 @@
-function toggleDescriptor(language) {
+function toggleDescriptor(language: String) {
     let description = document.getElementById("description");
-    if (language === "Korean") {
-        description.innerHTML = "Show Korean Text";
+    if (language === "en") {
+        description!.innerHTML = "English";
     }
-    else {
-        description.innerHTML = "Show English Text";
+    else if (language === "es") {
+        description!.innerHTML = "Español";
     }
 }
